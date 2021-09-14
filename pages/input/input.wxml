@@ -1,0 +1,9 @@
+<!--pages/input/input.wxml-->
+<input type="text"/>
+<!-- 2.value 默认值 -->
+<input type="text" value="hhh"/>
+
+<!-- 3.type: 决定键盘类型 文本输入键盘/数字输入键盘/身份证 -->
+<!-- 4.placeholder 占位文字 -->
+
+<input type="text" bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"/>
