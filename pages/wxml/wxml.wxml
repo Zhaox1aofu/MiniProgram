@@ -1,0 +1,7 @@
+<view>----------template------------</view>
+<!-- 之前小程序不支持自定义组件，为了代码的复用：template -->
+<import src="../../wxml/template"/>
+
+<template is="contentItem" data="{{btnText: 'aaa', content: 'bbb'}}"/>
+
+<view>{{numberFoFixed(25.55555555)}}</view>
