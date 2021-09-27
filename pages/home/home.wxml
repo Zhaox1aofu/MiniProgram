@@ -1,3 +1,48 @@
 <!--pages/home/home.wxml-->
 <text class='title'>Hello world</text>
 <button size="mini">按钮</button>
+<!-- 使用自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+
+<!-- 2.自定义组件样式细节 -->
+<!-- <my-style></my-style> -->
+
+<!-- 3.自定义组件传递数据prop 传递样式-->
+<my-prop title='哈哈哈' titleclass='red'></my-prop>
+<my-prop title='呵呵呵' titleclass='green'></my-prop>
+<my-prop titleclass='blue'></my-prop>
+
+<!-- 4.组件内部发出事件 -->
+<view>当前计数: {{counter}}</view>
+<my-event bind:increment='handleIncrement'/>
+
+<!-- 5.tab-control练习 -->
+<!-- <w-tab-control title="{{['流行','新款','精选']}}"
+                bind:itemclick="handletabClick"></w-tab-control> -->
+
+<!-- 6.直接选中组件修改数据 调用方法 -->
+<button size="mini" bind:tap='handleIncremenCpn'>修改组件内数据</button>
+<my-select class="sel-class"></my-select>
+
+<view>--------------------</view>
+<my-slot>
+    <button size="mini">我是插入的按钮</button>
+</my-slot>
+<my-slot>
+    <text>哈哈哈</text>
+</my-slot>
+<my-slot>
+    <slider value="60"></slider>
+</my-slot>
+<view>--------------------</view>
+<!-- 使用多插槽 
+ 1.给每个插槽起名字 name属性
+ 2.在component对象中添加选修：option  multipleSlots: true-->
+<button size="mini" bindtap="handleChangeShow">切换显示</button>
+<block wx:if="{{isShow}}">
+    <my-mslot>
+        <button size="mini" slot='slot2'>我是插入的按钮</button>
+        <slider slot='slot1' value="50"></slider>
+        <text slot='slot3'>111</text>
+    </my-mslot>
+</block>
