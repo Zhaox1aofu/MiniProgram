@@ -1,0 +1,18 @@
+
+<!-- <wxs module="info">
+    // JS代码
+    var name = "111";
+    var sum = function (num1, num2) {
+        return num1 + num2
+    }
+    module.exports = {
+        name: name,
+        sum: sum
+    }
+</wxs> -->
+<wxs src="../../wxs/info.wxs" module="info"></wxs>
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{info.name}}</view>
+<view>{{info.sum(20,30)}}</view>
+<view>{{format.priceFormat(25.55555)}}</view>
+<view>{{format.dateFormat(time, 'yyyy-MM-dd hh-mm-ss')}}</view>

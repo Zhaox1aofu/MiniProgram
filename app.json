@@ -1,6 +1,10 @@
 {
     "pages": [
+        "pages/wxs/wxs",
+        "pages/wxml/wxml",
+        "pages/wxss/wxss",
         "pages/home/home",
+<<<<<<< HEAD
         "pages/category/category",
         "pages/cart/cart",
         "pages/profile/profile"
@@ -38,5 +42,10 @@
             }
         ]
     },
+=======
+        "pages/about/about"
+        
+    ],
+>>>>>>> 4cf066b9419c9354898af5a731612b556c1d1350
     "sitemapLocation": "sitemap.json"
 }

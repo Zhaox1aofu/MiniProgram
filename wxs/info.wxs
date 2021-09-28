@@ -1,0 +1,9 @@
+ // JS代码
+ var name = "111";
+ var sum = function (num1, num2) {
+     return num1 + num2
+ }
+ module.exports = {
+     name: name,
+     sum: sum
+ }
